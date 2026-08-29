@@ -1,27 +1,48 @@
 # pick-pack
-# Frontend
+# Tech Stack
+## Frontend
 React, Vite, Node.js, JavaScript / TypeScript
-# Backend
+## Backend
 Python, FastAPI, Uvicorn
 # Installation
 ## Frontend
+Navigate to the frontend folder:
 ```bash
 cd frontend
 ```
-## Install dependencies:
+## Install the dependencies:
 ```bash
 npm install
 ```
-## Run the server:
+## Run the development server:
 ```bash
 npm run dev
 ```
 # Backend
-## Open the new terminal and enter the backend folder:
+## Open a new terminal and navigate to the backend folder:
 ```bash
 cd backend
 ```
-## Run FastAPI:
+## Create and activate a virtual environment:
+Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+Linux / macOS:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+## Install the Python dependencies:
+```bash
+pip install -r requirements.txt
+```
+## Make sure Ollama is installed and running, then pull the Llama 3.2 3B model:
+```bash
+ollama pull llama3.2:3b
+```
+## Run the FastAPI server:
 ```bash
 uvicorn main:app --reload
 ```
