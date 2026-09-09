@@ -1,4 +1,5 @@
 # pick-pack
+Pick-Pack is a web-based Q&A application powered by Llama 3.2 3B. It allows users to ask questions and receive AI-generated answers through a simple web interface.
 # Tech Stack
 ## Frontend
 React, Vite, Node.js, JavaScript / TypeScript
