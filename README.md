@@ -113,7 +113,7 @@ function App() {
 # Backend
 Python, FastAPI, Uvicorn
 
-# Features
+## Features
 Product Search
 
   Searches products from the CSV dataset.
@@ -148,7 +148,7 @@ CORS Support
 
   Configured to allow requests from the frontend application.
 
-# Tech Stack
+## Tech Stack
 Backend
 Python
 FastAPI — REST API framework
@@ -169,7 +169,7 @@ The product dataset is stored as:
 data/barang.csv
 ```
 
-# Chatbot Architecture
+## Chatbot Architecture
 The chatbot follows this general flow:
 ```bash
 User
@@ -213,7 +213,7 @@ Frontend
 
 ```
 
-# Question Analysis
+## Question Analysis
 Before searching the product data, the backend sends the user's question to Ollama for analysis.
 
 The three values are then used by the backend:
@@ -222,7 +222,7 @@ The three values are then used by the backend:
   keyword — Used to find similar products when the requested product is unavailable.
   field — Determines what information the user is requesting.
 
-# Product Search
+## Product Search
 Product searching is handled by ExcelService.
 
 The main search function supports multiple keywords and searches across:
@@ -235,10 +235,10 @@ Ekuivalen
 Qty
 ```
 
-# Similar Product Search
+## Similar Product Search
 When an exact product search does not return any results, the backend performs a broader search using the main product keyword.
 
-# Ollama Integration
+## Ollama Integration
 The OllamaService handles two main tasks.
 
 1. Question Analysis
@@ -266,7 +266,7 @@ The model is instructed to:
   Avoid exposing internal implementation details.
   Keep responses short and natural.
 
-#  API
+## API
 POST /chat
 Main endpoint used by the frontend chatbot.
 
