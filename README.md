@@ -110,23 +110,9 @@ function App() {
 }
 ```
 
-## Backend
-Python, FastAPI, Uvicorn
-# Installation
-## Frontend
-Navigate to the frontend folder:
-```bash
-cd frontend
-```
-## Install the dependencies:
-```bash
-npm install
-```
-## Run the development server:
-```bash
-npm run dev
-```
 # Backend
+Python, FastAPI, Uvicorn
+
 # Features
 Product Search
 
@@ -302,6 +288,20 @@ Response
 {
   "answer": "Yes, we have Hot Paper Cup 8 & 9 oz Generic."
 }
+```
+# Installation
+## Frontend
+Navigate to the frontend folder:
+```bash
+cd frontend
+```
+## Install the dependencies:
+```bash
+npm install
+```
+## Run the development server:
+```bash
+npm run dev
 ```
 ## Open a new terminal and navigate to the backend folder:
 ```bash
