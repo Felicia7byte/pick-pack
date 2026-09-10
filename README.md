@@ -1,10 +1,9 @@
 # pick-pack
 Pick-Pack is a web-based Q&A application powered by Llama 3.2 3B. It allows users to ask questions and receive AI-generated answers through a simple web interface.
-# Tech Stack
-## Frontend
+# Frontend
 React, Vite, Node.js, JavaScript / TypeScript
 
-# Features
+## Features
 Interactive 3D Hero Section
 
   Displays a 3D model using Three.js.
@@ -38,7 +37,7 @@ Responsive Layout
   Includes responsive behavior for the product carousel.
   Designed for desktop and tablet-sized screens.
 
-# Tech Stack
+## Tech Stack
 Core
   React 19 — UI library
   TypeScript 6 — Type-safe JavaScript
@@ -52,7 +51,7 @@ UI & Icons
   CSS3 — Custom styling and animations
   Google Fonts — Onest — Primary website font
 
-# Product Data
+## Product Data
 Product information is stored in:
 ```bash
 src/data/ProductLinks.ts
@@ -67,7 +66,7 @@ export interface Product {
 }
 ```
 
-# Chatbot
+## Chatbot
 The chatbot consists of three main components: Chatbot.tsx, ChatForm.tsx, and ChatMessage.tsx
 
 The message structure is defined in:
@@ -79,7 +78,7 @@ When a user sends a message, the frontend sends a POST request to the chat API.
 ```bash
 POST /chat
 ```
-# Styling
+## Styling
 The project uses custom CSS rather than a CSS framework.
 
 The styling includes:
@@ -94,7 +93,7 @@ The styling includes:
   Custom shadows and borders
   Google Fonts
 
-# Website Sections
+## Website Sections
 The application is structured into four primary sections: Home, Products, Contact, Chatbot
 
 The main application is composed in App.tsx:
