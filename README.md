@@ -9,14 +9,12 @@ React, Vite, Node.js, JavaScript / TypeScript
   - Displays a 3D model using Three.js.
   - Users can rotate the model using mouse or touch controls.
   - Includes an interactive movement hint.
-
 * 3D Product Carousel
 
   * Products are displayed in a scroll-driven 3D carousel.
   * Product cards move along the Z-axis based on the user's scroll position.
   * Cards dynamically change opacity depending on their distance from the viewer.
-  * Supports alternating left and right positioning.
-    
+  * Supports alternating left and right positioning. 
 - Product Showcase
 
   - Product information is managed through a centralized product data file.
@@ -40,18 +38,18 @@ React, Vite, Node.js, JavaScript / TypeScript
   - Designed for desktop and tablet-sized screens.
 
 ## Tech Stack
-Core
-  React 19 — UI library
-  TypeScript 6 — Type-safe JavaScript
-  Vite 8 — Development server and build tool
-3D
-  Three.js — 3D rendering
-  React Three Fiber — React renderer for Three.js
-  React Three Drei — Helpers and abstractions for React Three Fiber
-UI & Icons
-  React Icons — Icon library
-  CSS3 — Custom styling and animations
-  Google Fonts — Onest — Primary website font
+- Core
+  - React 19 — UI library
+  - TypeScript 6 — Type-safe JavaScript
+  - Vite 8 — Development server and build tool
+- 3D
+  - Three.js — 3D rendering
+  - React Three Fiber — React renderer for Three.js
+  - React Three Drei — Helpers and abstractions for React Three Fiber
+- UI & Icons
+  - React Icons — Icon library
+  - CSS3 — Custom styling and animations
+  - Google Fonts — Onest — Primary website font
 
 ## Product Data
 Product information is stored in:
