@@ -9,12 +9,14 @@ React, Vite, Node.js, JavaScript / TypeScript
   - Displays a 3D model using Three.js.
   - Users can rotate the model using mouse or touch controls.
   - Includes an interactive movement hint.
-3D Product Carousel
 
-  Products are displayed in a scroll-driven 3D carousel.
-  Product cards move along the Z-axis based on the user's scroll position.
-  Cards dynamically change opacity depending on their distance from the viewer.
-  Supports alternating left and right positioning.
+* 3D Product Carousel
+
+  * Products are displayed in a scroll-driven 3D carousel.
+  * Product cards move along the Z-axis based on the user's scroll position.
+  * Cards dynamically change opacity depending on their distance from the viewer.
+  * Supports alternating left and right positioning.
+    
 Product Showcase
 
   Product information is managed through a centralized product data file.
