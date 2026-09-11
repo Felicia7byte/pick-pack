@@ -4,11 +4,11 @@ Pick-Pack is a web-based Q&A application powered by Llama 3.2 3B. It allows user
 React, Vite, Node.js, JavaScript / TypeScript
 
 ## Features
-Interactive 3D Hero Section
+- Interactive 3D Hero Section
 
-  Displays a 3D model using Three.js.
-  Users can rotate the model using mouse or touch controls.
-  Includes an interactive movement hint.
+  - Displays a 3D model using Three.js.
+  - Users can rotate the model using mouse or touch controls.
+  - Includes an interactive movement hint.
 3D Product Carousel
 
   Products are displayed in a scroll-driven 3D carousel.
