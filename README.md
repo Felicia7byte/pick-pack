@@ -17,27 +17,27 @@ React, Vite, Node.js, JavaScript / TypeScript
   * Cards dynamically change opacity depending on their distance from the viewer.
   * Supports alternating left and right positioning.
     
-Product Showcase
+- Product Showcase
 
-  Product information is managed through a centralized product data file.
-  Each product contains an ID, name, and image.
-Contact Section
+  - Product information is managed through a centralized product data file.
+  - Each product contains an ID, name, and image.
+- Contact Section
 
-  Displays the current Jakarta time in real time.
-  Provides social/contact links for Instagram and TikTok.
-  Uses an interactive tooltip for contact information.
-  Styled to resemble a tablet/iPad interface.
-AI Chatbot Interface
+  - Displays the current Jakarta time in real time.
+  - Provides social/contact links for Instagram and TikTok.
+  - Uses an interactive tooltip for contact information.
+  - Styled to resemble a tablet/iPad interface.
+- AI Chatbot Interface
 
-  Floating chatbot button accessible throughout the website.
-  Displays user and assistant messages.
-  Automatically scrolls to the latest message.
-  Sends user messages to the backend chat API.
-  Provides a loading state while waiting for the assistant response.
-Responsive Layout
+  - Floating chatbot button accessible throughout the website.
+  - Displays user and assistant messages.
+  - Automatically scrolls to the latest message.
+  - Sends user messages to the backend chat API.
+  - Provides a loading state while waiting for the assistant response.
+- Responsive Layout
 
-  Includes responsive behavior for the product carousel.
-  Designed for desktop and tablet-sized screens.
+  - Includes responsive behavior for the product carousel.
+  - Designed for desktop and tablet-sized screens.
 
 ## Tech Stack
 Core
