@@ -5,35 +5,29 @@ React, Vite, Node.js, JavaScript / TypeScript
 
 ## Features
 - Interactive 3D Hero Section
-
   - Displays a 3D model using Three.js.
   - Users can rotate the model using mouse or touch controls.
   - Includes an interactive movement hint.
 * 3D Product Carousel
-
   * Products are displayed in a scroll-driven 3D carousel.
   * Product cards move along the Z-axis based on the user's scroll position.
   * Cards dynamically change opacity depending on their distance from the viewer.
   * Supports alternating left and right positioning. 
 - Product Showcase
-
   - Product information is managed through a centralized product data file.
   - Each product contains an ID, name, and image.
 - Contact Section
-
   - Displays the current Jakarta time in real time.
   - Provides social/contact links for Instagram and TikTok.
   - Uses an interactive tooltip for contact information.
   - Styled to resemble a tablet/iPad interface.
 - AI Chatbot Interface
-
   - Floating chatbot button accessible throughout the website.
   - Displays user and assistant messages.
   - Automatically scrolls to the latest message.
   - Sends user messages to the backend chat API.
   - Provides a loading state while waiting for the assistant response.
 - Responsive Layout
-
   - Includes responsive behavior for the product carousel.
   - Designed for desktop and tablet-sized screens.
 
@@ -82,7 +76,6 @@ POST /chat
 The project uses custom CSS rather than a CSS framework.
 
 The styling includes:
-
   - Responsive layouts
   - CSS gradients
   - 3D transforms
@@ -114,56 +107,48 @@ function App() {
 Python, FastAPI, Uvicorn
 
 ## Features
-Product Search
-
-  Searches products from the CSV dataset.
-  Supports multiple keywords.
-  Searches across product code, description, size, unit, equivalence, and quantity.
-Similar Product Search
-
-  Finds products based on the main product keyword.
-  Used when the requested product cannot be found.
-  Helps provide alternative products to the user.
-AI Question Analysis
-
-  Uses Ollama to identify:
-  The product the user is looking for.
-  The main product keyword.
-  The information requested by the user.
-AI-Powered Answer Generation
-
-  Uses product data as context for generating responses.
-  Answers are generated based only on the available product information.
-  Responses are configured to be in English.
-  Product names are preserved from the original dataset.
-Product Availability Checking
-
-  Determines whether a requested product exists in the dataset.
-  Provides similar products when the requested product is unavailable.
-REST API
-
-  Provides a /chat endpoint for frontend chatbot communication.
-  Accepts JSON requests and returns JSON responses.
-CORS Support
-
-  Configured to allow requests from the frontend application.
+- Product Search
+  - Searches products from the CSV dataset.
+  - Supports multiple keywords.
+  - Searches across product code, description, size, unit, equivalence, and quantity.
+- Similar Product Search
+  - Finds products based on the main product keyword.
+  - Used when the requested product cannot be found.
+  - Helps provide alternative products to the user.
+- AI Question Analysis
+  - Uses Ollama to identify:
+  - The product the user is looking for.
+  - The main product keyword.
+  - The information requested by the user.
+- AI-Powered Answer Generation
+  - Uses product data as context for generating responses.
+  - Answers are generated based only on the available product information.
+  - Responses are configured to be in English.
+  - Product names are preserved from the original dataset.
+- Product Availability Checking
+  - Determines whether a requested product exists in the dataset.
+  - Provides similar products when the requested product is unavailable.
+- REST API
+  - Provides a /chat endpoint for frontend chatbot communication.
+  - Accepts JSON requests and returns JSON responses.
+- CORS Support
+  - Configured to allow requests from the frontend application.
 
 ## Tech Stack
-Backend
-Python
-FastAPI — REST API framework
-Pydantic — Request data validation
-Pandas — CSV data processing and searching
-Ollama — Local LLM integration
+- Backend
+  - Python
+  - FastAPI — REST API framework
+  - Pydantic — Request data validation
+  - Pandas — CSV data processing and searching
 
-AI Model
+- AI Model
 The chatbot currently uses:
 ```bash
 llama3.2:3b
 ```
 The model is accessed through the Ollama Python library.
 
-Data Storage
+- Data Storage
 The product dataset is stored as:
 ```bash
 data/barang.csv
@@ -217,10 +202,9 @@ Frontend
 Before searching the product data, the backend sends the user's question to Ollama for analysis.
 
 The three values are then used by the backend:
-
-  search — Used to search for the requested product.
-  keyword — Used to find similar products when the requested product is unavailable.
-  field — Determines what information the user is requesting.
+  - search — Used to search for the requested product.
+  - keyword — Used to find similar products when the requested product is unavailable.
+  - field — Determines what information the user is requesting.
 
 ## Product Search
 Product searching is handled by ExcelService.
@@ -246,10 +230,9 @@ The OllamaService handles two main tasks.
 analyze_question(question)
 ```
 This determines:
-
-Product search phrase
-Main product keyword
-Requested information field
+  - Product search phrase
+  - Main product keyword
+  - Requested information field
 
 2. Answer Generation
 ```bash
@@ -258,13 +241,12 @@ generate_answer(question, data, field)
 The product data is passed to Ollama as context.
 
 The model is instructed to:
-
-  Answer only from the provided product data.
-  Avoid inventing information.
-  Answer in English.
-  Keep product names as they appear in the dataset.
-  Avoid exposing internal implementation details.
-  Keep responses short and natural.
+  - Answer only from the provided product data.
+  - Avoid inventing information.
+  - Answer in English.
+  - Keep product names as they appear in the dataset.
+  - Avoid exposing internal implementation details.
+  - Keep responses short and natural.
 
 ## API
 POST /chat
