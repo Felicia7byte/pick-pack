@@ -83,15 +83,15 @@ The project uses custom CSS rather than a CSS framework.
 
 The styling includes:
 
-  Responsive layouts
-  CSS gradients
-  3D transforms
-  Scroll-based animations
-  Hover effects
-  Tooltip animations
-  Chatbot transitions
-  Custom shadows and borders
-  Google Fonts
+  - Responsive layouts
+  - CSS gradients
+  - 3D transforms
+  - Scroll-based animations
+  - Hover effects
+  - Tooltip animations
+  - Chatbot transitions
+  - Custom shadows and borders
+  - Google Fonts
 
 ## Website Sections
 The application is structured into four primary sections: Home, Products, Contact, Chatbot
