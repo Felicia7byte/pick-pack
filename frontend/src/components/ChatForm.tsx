@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { FiArrowUp } from 'react-icons/fi'
-import { Chat } from "../types/Chat";
+import type { Chat } from "../types/Chat";
 
 type ChatFormProps = {
   setChatHistory: React.Dispatch<React.SetStateAction<Chat[]>>;
