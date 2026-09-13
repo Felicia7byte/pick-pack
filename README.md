@@ -316,5 +316,9 @@ uvicorn main:app --reload
 The chatbot is powered by Llama 3.2 3B.
 
 Please note that the chatbot is still under development and may have limitations in terms of accuracy, response quality, and overall performance. There are still several areas that can be improved, and future development will focus on making the chatbot more reliable, accurate, and capable.
-# Live demo
+# Demo
+## Video Demo
 [![Live Demo](https://img.youtube.com/vi/TuTdM6Dctvw/hqdefault.jpg)](https://youtu.be/TuTdM6Dctvw)
+## Live Website
+https://pick-pack-sage.vercel.app/
+⚠️The live website currently showcases the frontend only. The backend and AI features are not available in the deployed version. To test the full application, including the backend and AI functionality, please run the project locally.
