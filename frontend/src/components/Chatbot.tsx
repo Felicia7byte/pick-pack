@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import ChatForm from "./ChatForm";
 import ChatMessage from "./ChatMessage";
 import { IoMdChatbubbles } from 'react-icons/io'
-import { Chat } from "../types/Chat";
+import type { Chat } from "../types/Chat";
 import Logo from "../assets/logo.png"
 
 const Chatbot = () => {
