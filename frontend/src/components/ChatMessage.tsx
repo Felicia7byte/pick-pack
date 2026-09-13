@@ -1,5 +1,5 @@
 import Logo from "../assets/logo.png"
-import { Chat } from "../types/Chat";
+import type { Chat } from "../types/Chat";
 
 type ChatMessageProps = {
     chat: Chat;
